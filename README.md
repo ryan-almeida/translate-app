@@ -1,22 +1,20 @@
 # Build a Food Order Chatbot using AWS 
 
 ## Project Description:
-This project builds and interact with a chatbot that allows you to place a food order. This is an example built by combining two online tutorials:
-- A Youtube Tutorial that shows how to build the actual chatbot using Amazon Lex
-- A Cloudformation tutorial/repo that allows you to provision a UI component (a web browser in this case) within which to embed a chatbot (such as the one above)
+This project builds and interacts with a chatbot that allows you to place a food order. This is an example built alongside a tutorial by Cumulus Cycles' Youtube Channel playlist (https://www.youtube.com/watch?v=m2vlwM8-50k&list=PLRBkbp6t5gM00QA8CMkYIQt7ATE3iJkdN&ab_channel=CumulusCycles) 
 
 This project serves as an introductory exploration to building conversational AI. 
 
 ## Architecture Diagram and Output:
 ![Alt text](architecture_diagram.PNG)
 ## Components Decription:
-| Component     | Functionality |
-| ------------- | ------------- |
-| Amazon Lex      | Provides the chatbot functionality, allowing users to interact with th system via voice or text. Handles natural language processing to understand user input and respond accordingly |
-| AWS Lambda | Executes backend logic. It uses the built-in integration capability with Lex to process inputs from Lex (e.g. parsing user orders, validating data, handling business and fulfilment logic) and returns responses |
-| Amazon S3  | Hosts the static assets (such as HTML, CSS and JavaScript files) for the frontend webpage where the Lex chatbot is embedded  |
-| AWS Cloudfront  | Distributes the frontend webpage content via a Content Delivery Network (CDN), ensuring fast and secure delivery of the website globally |
-| Amazon Cognito  | Handles user authentication for the frontend, providing secure access to the web interface for users interacting with the chatbot  |
+| Component      | Functionality                                                                                                                                                                                                     |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Amazon Lex     | Provides the chatbot functionality, allowing users to interact with th system via voice or text. Handles natural language processing to understand user input and respond accordingly                             |
+| AWS Lambda     | Executes backend logic. It uses the built-in integration capability with Lex to process inputs from Lex (e.g. parsing user orders, validating data, handling business and fulfilment logic) and returns responses |
+| Amazon S3      | Hosts the static assets (such as HTML, CSS and JavaScript files) for the frontend webpage where the Lex chatbot is embedded                                                                                       |
+| AWS Cloudfront | Distributes the frontend webpage content via a Content Delivery Network (CDN), ensuring fast and secure delivery of the website globally                                                                          |
+| Amazon Cognito | Handles user authentication for the frontend, providing secure access to the web interface for users interacting with the chatbot                                                                                 |
 
 ## Features:
 This chatbot allows you to order and customize a burger with the following characteristics:
